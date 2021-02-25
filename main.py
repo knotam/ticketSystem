@@ -42,7 +42,7 @@ class ticketSystem:
 
     def beginFunction(self):
         sqlConnection = mysql.connector.connect(user='database', password='password',
-                              host='revivehost.com',
+                              host='databaseHost',
                               database='username',
                               autocommit=True)
         self.dbcursor = sqlConnection.cursor()
